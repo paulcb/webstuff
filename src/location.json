@@ -1,0 +1,23 @@
+{
+  "zip_code": "22301",
+  "lat": 38.819896,
+  "lng": -77.059383,
+  "city": "Alexandria",
+  "state": "VA",
+  "timezone": {
+    "timezone_identifier": "America/New_York",
+    "timezone_abbr": "EDT",
+    "utc_offset_sec": -14400,
+    "is_dst": "T"
+  },
+  "acceptable_city_names": [
+    {
+      "city": "Potomac",
+      "state": "VA"
+    }
+  ],
+  "area_codes": [
+    571,
+    703
+  ]
+}
