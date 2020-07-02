@@ -5,23 +5,19 @@ import Data from './weather.json';
 import printMe from './print.js';
 
 function component() {
-  const element = document.createElement('div');
-  const btn = document.createElement('button');
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
   const myIcon = new Image();
   myIcon.src = Icon;
+  myIcon.style.height = '100px';
+  myIcon.style.width = '200px';
 
-  element.appendChild(myIcon);
+  return myIcon;
+};
 
-  btn.innerHTML = 'Click me and check the console!';
-  btn.onclick = printMe;
-
-  element.appendChild(btn);
-
-  console.log(Data);
-
-  return element;
-}
+function show(){
+  document.getElementById('mymessage').innerHTML = 'heyy';
+};
 
 document.body.appendChild(component());
+
+const mybutt = document.getElementById('mybut');
+mybutt.onclick = show;

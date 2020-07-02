@@ -15,8 +15,13 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     new HtmlWebpackPlugin({
-      title: 'Output Management',
+      title: 'My App',
+      template: 'src/index.html'
     }),
+    new HtmlWebpackPlugin({  // Also generate a test.html
+      filename: 'test.html',
+      template: 'src/test.html'
+    })
   ],
   output: {
     filename: '[name].bundle.js',
